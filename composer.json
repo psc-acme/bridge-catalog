@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/bridge-catalog",
+    "description": "Package bridge-catalog for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\BridgeCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/filesystem": "^7.0",
+        "nette/utils": "^4.0",
+        "doctrine/doctrine-bundle": "^2.13",
+        "carbon/carbon": "^3.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
